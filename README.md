@@ -9,3 +9,10 @@ Features of project are:
 -  User will be provided with dashboard where they can manage rooms, handle upcoming requests and see their overall stats.
 - There will be editor roles too which will be assigned by admins. What editors can do is they can review and edit the rooms that are uploaded by users.
 - Finally, an admin will have most previliges like adding, blocking active users and all rooms management, users management can be handled by them.
+
+Tech Stack Used in Client:
+
+- NextJS
+- MaterialUI as an UI library
+- React Hook Form for forms validation
+- Firebase Storage
