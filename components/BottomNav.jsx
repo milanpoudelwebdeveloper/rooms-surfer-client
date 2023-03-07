@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   BottomNavigation,
   BottomNavigationAction,
@@ -12,11 +12,16 @@ import AddRoom from "./AddRoom/AddRoom";
 
 const BottomNav = () => {
   const [value, setValue] = useState(0);
+  const ref = useRef(null);
 
   const children = [<ClusterMap />, <Rooms />, <AddRoom />];
 
+  useEffect(() => {
+    ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [value]);
+
   return (
-    <Box>
+    <Box ref={ref}>
       {children[value]}
       <Paper
         elevation={3}
