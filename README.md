@@ -18,3 +18,11 @@ for the location they are interested in.
 - React Hook Form for forms validation
 - Firebase Storage
 
+# Tech Stack Used in Server:
+
+- NodeJS
+- ExpressJS
+- PassportJS for google and facebook signup
+- JWT for authentication and authorization
+- Postgres
+
